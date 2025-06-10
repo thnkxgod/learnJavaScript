@@ -29,7 +29,10 @@ function clRangeEO() {
     }
   }
   d = d + "------------------";
-  document.getElementById("rngres").innerHTML = d;
+  var v = document.getElementById("rngres")
+  v.innerHTML = d;
+  v.style.color = "red"
+
   var tl = "";
   for (let i = a; i < b; i++) {
     if (i % 2 == 1) {
@@ -37,7 +40,9 @@ function clRangeEO() {
       tl += tmp;
     }
   }
-  document.getElementById("rngres2").innerHTML = tl;
+  var u = document.getElementById("rngres2")
+  u.innerHTML =tl
+  u.style.color = "green"
 }
 
 function calculatePrime() {
@@ -91,4 +96,9 @@ function evenOdd() {
 function checkEO(n) {
   if (n % 2 == 0) return true;
   else return false;
+}
+
+function showContent(){
+  var j = document.querySelectorAll('.a2 h1')
+  console.log(j[1]);
 }
