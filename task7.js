@@ -181,7 +181,7 @@ function FindLongestString() {
   document.querySelector("#disT7").innerHTML = longestString;
 }
 
-const arrT8 = [3,56,9,66,4,99];
+const arrT8 = [];
 function addNumT8() {
   let val = parseFloat(document.querySelector("#inpT8").value);
   arrT8.push(val);
@@ -233,13 +233,12 @@ function reverseArray() {
   let tmp = 0;
   let len = arrT8.length;
   for (let i = 0; i < len / 2; i++) {
-    if (i != len - i+1) {
+    if (i != len - (i+1)) {
       tmp = arrT8[i];
-      arrT8[i] = arrT8[len - i + 1];
-      arrT8[len - i+1] = tmp;
+      arrT8[i] = arrT8[len - (i + 1)];
+      arrT8[len - (i+1)] = tmp;
     }
   }
-
   arrT8.forEach(e => {
     finalString1+=e+ ', '
   });
