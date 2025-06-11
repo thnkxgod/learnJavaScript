@@ -6,7 +6,7 @@
     <title>task 7</title>
   </head>
   <body>
-    <div id="div1">
+    <div>
       <h3>Task 1 : Even odd range with color in a series</h3>
       <input id="firstInp" type="number" placeholder="Starting number" />
       <span>To</span>
@@ -44,8 +44,66 @@
 
     <div>
       <h3>Task 4 :Merge two sorted array</h3>
-      <button>clcik to merge</button>
+      <p id="arr1dis">display 1</p>
+      <input type="number" id="arr1" placeholder="enter numbers for array 1" />
+      <button onclick="addNum2(arr1)">Add to Array 1</button><br /><br />
+      <p id="arr2dis">display 2</p>
+      <input type="number" id="arr2" placeholder="enter numbers for array 2" />
+      <button onclick="addNum2(arr2)" id="arr2">Add to array 2</button
+      ><br /><br />
+      <button onclick="mergeArray()">clcik to merge</button>
       <p id="res4">result</p>
+    </div>
+    <hr />
+
+    <div>
+      <h3>Task 5: remove all duplicate elements</h3>
+      <button onclick="removeDuplicate()">click to remove</button>
+      <p id="res5">Result</p>
+    </div>
+    <hr />
+
+    <div>
+      <h3>task 6 : Find common element b/W two list</h3>
+      <button onclick="FindCommonElement()">Click to find common</button>
+      <p id="resT6">result</p>
+    </div>
+    <hr />
+    <div>
+      <h3>Task 7 : Find the longest string</h3>
+      <input type="text" id="nameInp" placeholder="Enter the name" />
+      <button onclick="addNames()">Add names</button>
+      <button onclick="FindLongestString()">Show longest Name</button>
+      <p id="disT7">display</p>
+    </div>
+
+    <hr />
+    <div>
+      <h3>Task 8 : calculate the sum of all numbers in array.</h3>
+      <p id="numsDisT8">number's display</p>
+      <input type="number" id="inpT8" placeholder="Enter numbers" />
+      <button onclick="addNumT8()">Add Values</button>
+      <button onclick="sumOfAllNum()">Sum of all numbers</button>
+      <br />
+      <br />
+
+      <div style="background-color: aquamarine;">
+
+        <h4 style="color: green;" id="resT8">Single Result Display  </h4>
+      </div>
+
+
+      <h3>Task 9 : Find smallest and Largest number</h3>
+      <button onclick="FindSmallLarge()">
+        Click to show smallest and Largest Number
+      </button>
+
+      <h3>task 10: counts the number of even and odd integers</h3>
+      <button onclick="countEvenOdd()">Check count of Even Odd</button>
+
+
+      <h3>task 11 : reverse the elements of the array</h3>
+      <button onclick="reverseArray()">click to Reverse</button>
     </div>
 
     <script src="task7.js"></script>
