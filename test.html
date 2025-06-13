@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <h1> hello</h1>
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Test Events</title>
+  </head>
+  <body>
+    <h1 id="r1">Result:</h1>
+
+    <!-- Number Buttons -->
+    <button onclick="valueAdd(1)">1</button>
+    <button onclick="valueAdd(2)">2</button>
+    <button onclick="valueAdd(3)">3</button><br /><br />
+    <button onclick="valueAdd(4)">4</button>
+    <button onclick="valueAdd(5)">5</button>
+    <button onclick="valueAdd(6)">6</button><br /><br />
+    <button onclick="valueAdd(7)">7</button>
+    <button onclick="valueAdd(8)">8</button>
+    <button onclick="valueAdd(9)">9</button><br /><br />
+    <button onclick="valueAdd(0)">0</button><br /><br />
+
+    <!-- Operation Buttons -->
+    <button onclick="setOperation('+')">+</button>
+    <button onclick="setOperation('-')">-</button>
+    <button onclick="setOperation('*')">*</button>
+    <button onclick="setOperation('/')">/</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="clearAll()">C</button>
+    <button onclick="testfun()">Click</button>
 
     <script src="test.js"></script>
-</body>
+  </body>
 </html>
